@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Календарь</title>
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <button id="prev-month">«</button>
+            <h2 id="month-year"></h2>
+            <button id="next-month">»</button>
+        </div>
+        <div class="days-of-week">
+            <div>Пн</div>
+            <div>Вт</div>
+            <div>Ср</div>
+            <div>Чт</div>
+            <div>Пт</div>
+            <div>Сб</div>
+            <div>Вс</div>
+        </div>
+        <div class="days" id="days"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-description"></div>
+            <button onclick="saveHomework()">Сохранить ДЗ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
